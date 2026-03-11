@@ -1,61 +1,82 @@
-primary_name: "Your Name"
+primary_name: "Taozhi Chen"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Taozhi Chen"
 
 positions:
-- name: Title or Position
-- name: Affiliation Name
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+- name: Reasearch Assistant
+- name: Tsinghua University
+  # logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
 
 
-email: "your@email.com"
+email: "chentaozhi313@gmail.com"
 # cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
-# wechat_qrcode: /assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
-# orcid: 0000-0000-0000-0000
+gscholar: 64TU678AAAAJ  # This is an example, replace it with your own Google Scholar ID
+github: taozhi-chen
+# twitter: your_twitter_id  # Do not include the '@' symbol
+wechat_qrcode: /assets/images/etc/wechat.jpg
+wechat_prompt: >-
+  Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+linkedin: taozhi-c-049221238
+orcid: 0000-0002-0061-7890
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    I am currently a Research Assistant at the College of AI, Tsinghua University. Before this, I held research positions at Peking University and Microsoft. I received my MSc in Data Science and Machine Learning from Imperial College London.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    My research interests lie in large language models, multi-agent systems, reasoning, reinforcement learning, and reliable AI. I am particularly interested in building intelligent systems that can reason, interact, and operate robustly in complex real-world environments.
   </p>
 
 portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+# portrait_caption: >-
+#   Photo by Taozhi Chen on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
-  position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
-
-# experience:
+- name: Imperial College London
+  logo: /assets/images/badges/imperial_college_london_logo.jpeg
+  position:  >- 
+    MSc in Data Science and Machine Learning <br/>
+    Supervisor: <a href="https://profiles.imperial.ac.uk/g.gorman" target="_blank">Prof. Gerard Gorman</a> <br/>
+  date: Sep. 2024 - Sep. 2025
 # - name: Peking University
 #   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
+#   position: B.S. in Computer Science
 #   date: Sep. 2019 - Jul. 2021
 
+experience:
+- name: Tsinghua University
+  logo: /assets/images/badges/Tsinghua_University_Logo.svg.png
+  position: >- 
+    College of AI <br/>
+    Advisor: <a href="https://lj2lijia.github.io/" target="_blank">Prof. Jia Li</a> <br/>
+    Research Assistant <br/>
+  date: Sep. 2025 - Present
+- name: Microsoft
+  logo: /assets/images/badges/microsoft_logo.jpg
+  position: >- 
+    AI Advocacy team <br/>
+    Advisor: <a href="https://github.com/leestott" target="_blank">Prof. Lee Stott</a> <br/>
+    Research Intern <br/>
+  date: Apr. 2025 - Sep. 2025
+- name: Peking University
+  logo: /assets/images/badges/PKU_red.png
+  position:  >- 
+    School of Computer Science <br/>
+    Advisor: <a href="https://ligechina.github.io/" target="_blank">Prof. Ge Li</a> <br/>
+    Research Assistant <br/>
+  date: Jun. 2024 - Nov. 2025
+
 awards:
-- name: Award Name 2
+- name: China-U.S. Young Maker Competition, <br/>
+        National First Prize (Main Track)
   date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: Special Scholarship for Excellent Students, <br/> 
+        Macau Foundation (Sole Recipient)
+  date: 2023
+- name: Shenzhen Cybersecurity Competition, <br/>
+        First Prize, Advised by <a href="https://baike.baidu.com/en/item/Bin%20xing%20Fang/17880" target="_blank">Prof. Bin Xing Fang</a>
+  date: 2022
+- name: Scholarship, <br/>
+        Fok Ying Tung Foundation
+  date: 2021, 2022
