@@ -33,6 +33,12 @@ portrait_url: /assets/images/photos/portrait_tz_small.jpg
 #   Photo by Taozhi Chen on Unsplash (this caption is optional, comment it out to disable).
 
 education:
+- name: Emory University
+  logo: /assets/images/badges/emory_logo2.jpg
+  position:  >- 
+    Ph.D. in Computer Science and Informatics <br/>
+    Advisor: <a href="https://www.joonseok.org/" target="_blank">Prof. Joon-Seok Kim</a> <br/>
+  date: Sep. 2026 - Present
 - name: Imperial College London
   logo: /assets/images/badges/imperial_college_london_logo.jpeg
   position:  >- 
@@ -45,6 +51,12 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 experience:
+- name: ESET
+  logo: /assets/images/badges/ESET_logo1.png
+  position: >- 
+    China Technical Service Center <br/>
+    Technical Support Manager <br/>
+  date: Apr. 2025 - Present
 - name: Tsinghua University
   logo: /assets/images/badges/Tsinghua_University_Logo.svg.png
   position: >- 
@@ -66,6 +78,20 @@ experience:
     Advisor: <a href="https://ligechina.github.io/" target="_blank">Prof. Ge Li</a> <br/>
     Research Assistant <br/>
   date: Jun. 2024 - Nov. 2025
+- name: Tsinghua University
+  logo: /assets/images/badges/tsinghua_ee.png
+  position: >- 
+    Department of Electronic Engineering <br/>
+    Advisor: <a href="https://web.ee.tsinghua.edu.cn/xiaoxi/en/index.htm" target="_blank">Prof. Xi Xiao</a> <br/>
+    Research Assistant <br/>
+  date: Jun. 2023 - Jun. 2024
+- name: Schneider Electric
+  logo: /assets/images/badges/schneider_logo.svg
+  position:  >- 
+    People Analytics Department <br/>
+    Intern <br/>
+  date: Jun. 2022 - Aug. 2022
+
 
 awards:
 - name: China-U.S. Young Maker Competition, <br/>

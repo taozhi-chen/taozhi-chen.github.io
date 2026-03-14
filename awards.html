@@ -1,0 +1,39 @@
+---
+layout: default
+title : Awards
+navbar_title: Awards
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-category" data-offset="100"
+---
+
+{% assign sorted_awards = site.awards | sort: "date" | reverse %}
+{% assign category_order = "Scholarships|Awards|Competitions|Honors" | split: "|" %}
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+        {% for category_name in category_order %}
+        {% assign items_in_category = sorted_awards | where: "category", category_name %}
+        {% assign section_id = category_name | slugify %}
+        {% if items_in_category.size > 0 %}
+        <h2 class="pt-4" id="{{ section_id }}">{{ category_name }}</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in items_in_category %}
+                {% include widgets/award_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="col-2 d-none d-lg-block">
+        <div id="navbar-category" class="nav nav-pills flex-column sticky-top" style="top: 80px; z-index: 10;">
+            {% for category_name in category_order %}
+            {% assign items_in_category = sorted_awards | where: "category", category_name %}
+            {% assign section_id = category_name | slugify %}
+            {% if items_in_category.size > 0 %}
+            <a class="nav-link d-block" href="#{{ section_id }}">{{ category_name }}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
