@@ -1,6 +1,6 @@
 ---
 title: >-
-    Outstanding Individual Research Project Award
+    Outstanding Independent Research Project Award
     <span class="badge badge-pill badge-info badge">Poster</span>
 organization: "Imperial College London / Microsoft IRP"
 date: 2025-09-05
