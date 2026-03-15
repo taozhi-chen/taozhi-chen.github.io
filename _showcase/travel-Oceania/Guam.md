@@ -5,10 +5,10 @@ date: 2019-12-30 00:01:00 +0800
 group: Travel - Oceania
 ---
 <div>
-  <img data-src="https://images.unsplash.com/photo-1536070800722-f1a29a336bc7?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+  <img data-src="{{ '/assets/images/show/guam/guam.jpg' | relative_url }}" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" data-toggle="tooltip" data-placement="top" title="16 Aug 2024">
   <div class="card-body">
     <p class="card-text">
-      🇺🇸🇬🇺 Guam
+      🇺🇸🇬🇺 Guam - Flying a Plane
     </p>
   </div>
 </div>
