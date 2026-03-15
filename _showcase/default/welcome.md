@@ -1,23 +1,25 @@
 ---
 show: true
 width: 8
-date: 2024-01-12 00:01:00 +0800
+date: 2099-03-13 00:01:00 +0800
 ---
 
 <div class="p-4">
     <h2>Welcome to Showcase!</h2>
     <hr />
     <p>
-        <code>Showcase</code> is a page where you can show off almost anything you want. It can be the photo of your pets, your favorite books, your favorite projects, or anything else you want to show to the world.
+        Beyond research, this page brings together some of the moments that have shaped my journey in a more personal way. 
+        It includes graduation, travel, and experiences outside the lab and classroom that remain meaningful to me.
     </p>
     <p>
-        You can create a new showcase item by creating a new file in the <code>_showcase</code> folder. It gives you the highest flexibility to customize the item using any HTML code.
+        I have always felt that academic life is only one part of a much larger story. 
+        The places I have visited, the people I have met, and the milestones I have reached have all influenced the way I think, learn, and grow. 
+        These memories may seem quieter than publications or projects, but they are just as important in shaping who I am.
     </p>
     <p>
-        Cards are ordered by the <code>date</code> field in the front matter in descending order. The <code>width</code> field is used to determine the width of the card, ranging from 1 to 12.
-        Layout is done by the <a href="https://masonry.desandro.com/" target="_blank">Masonry</a> library.
-    </p>
-    <p>
-        For a tidy layout, it is recommended to set the width of the cards to be either multiple of 3 or multiple of 4 for all cards, except for small badges that do not take up much space (width=1).
+        This page is a small collection of those moments. 
+        Some mark important transitions, such as graduation. 
+        Others capture places, experiences, and fragments of life that I would like to remember and share. 
+        Together, they reflect a side of my journey beyond research.
     </p>
 </div>
