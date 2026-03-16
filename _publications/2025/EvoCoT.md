@@ -22,6 +22,6 @@ authors:
   - XiaoLong Hu
   - Ge Li
 links:
-  Code: https://github.com/gtxygyzb/EvoCoT
   Paper: https://arxiv.org/pdf/2508.07809
+  Code: https://github.com/gtxygyzb/EvoCoT
 ---
