@@ -11,7 +11,7 @@ container_class: container-xl
 <h1>{{ group.name }}</h1>
 
 {% assign use_normal_grid = false %}
-{% if group.name contains "Travel" %}
+{% if group.name contains "Travel" or group.name contains "Academic Activities" %}
     {% assign use_normal_grid = true %}
 {% endif %}
 
