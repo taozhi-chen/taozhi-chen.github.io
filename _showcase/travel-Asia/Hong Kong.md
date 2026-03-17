@@ -8,7 +8,7 @@ group: Travel - Asia
   <img data-src="{{ '/assets/images/show/china/hong.jpg' | relative_url }}" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
   <div class="card-body">
     <p class="card-text">
-      🇨🇳🇭🇰 China - Hong kong
+      🇨🇳🇭🇰 China - Hong Kong
     </p>
   </div>
 </div>

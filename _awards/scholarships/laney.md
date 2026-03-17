@@ -1,7 +1,7 @@
 ---
 title: >-
     Laney Graduate School Fellowship
-    <span class="badge badge-pill badge-info badge">Top 1%</span>
+    <span class="badge badge-pill badge-info badge">Top 5%</span>
 date: 2026-02-17
 display_date: "2026"
 category: "Scholarships"
