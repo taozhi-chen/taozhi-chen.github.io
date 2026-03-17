@@ -38,12 +38,15 @@ education:
   position:  >- 
     Ph.D. in Computer Science and Informatics <br/>
     Advisor: <a href="https://www.joonseok.org/" target="_blank">Prof. Joon-Seok Kim</a> <br/>
+    AI & Simulation Lab <br/>
   date: Sep. 2026 - Present
 - name: Imperial College London
   logo: /assets/images/badges/imperial_college_london_logo.jpeg
   position:  >- 
     MSc in Data Science and Machine Learning <br/>
     Supervisor: <a href="https://profiles.imperial.ac.uk/g.gorman" target="_blank">Prof. Gerard Gorman</a> <br/>
+    Lab Director: <a href="https://profiles.imperial.ac.uk/r.arcucci" target="_blank">Prof. Rossella Arcucci</a> <br/>
+    Ada Lovelace Academy <br/>
   date: Sep. 2024 - Sep. 2025
 # - name: Peking University
 #   logo: /assets/images/badges/PKU_red.png
@@ -94,6 +97,9 @@ experience:
 
 
 awards:
+- name: Laney Graduate School Fellowship, <br/>
+        Emory University
+  date: 2026
 - name: China-U.S. Young Maker Competition, <br/>
         National First Prize (Main Track)
   date: 2024
