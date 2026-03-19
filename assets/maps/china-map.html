@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>China Map</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    #china-map-chart {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="china-map-chart"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script>
+    async function initChinaMap() {
+      const chartDom = document.getElementById("china-map-chart");
+      const myChart = echarts.init(chartDom);
+
+      // 继续用你现在已经验证能点亮的中文全称
+      const visitedProvinces = [
+          "北京市",
+          "重庆市",
+          "福建省",
+          "甘肃省",
+          "广东省",
+          "海南省",
+          "河北省",
+          "河南省",
+          "湖北省",
+          "湖南省",
+          "内蒙古自治区",
+          "江苏省",
+          "宁夏回族自治区",
+          "青海省",
+          "陕西省",
+          "山东省",
+          "上海市",
+          "山西省",
+          "四川省",
+          "天津市",
+          "云南省",
+          "浙江省",
+          "香港特别行政区",
+          "澳门特别行政区",
+          "台湾省"
+      ];
+
+      const data = visitedProvinces.map(name => ({
+        name,
+        value: 1
+      }));
+
+      const englishNames = {
+        "北京市": "Beijing",
+        "天津市": "Tianjin",
+        "上海市": "Shanghai",
+        "重庆市": "Chongqing",
+        "河北省": "Hebei",
+        "山西省": "Shanxi",
+        "辽宁省": "Liaoning",
+        "吉林省": "Jilin",
+        "黑龙江省": "Heilongjiang",
+        "江苏省": "Jiangsu",
+        "浙江省": "Zhejiang",
+        "安徽省": "Anhui",
+        "福建省": "Fujian",
+        "江西省": "Jiangxi",
+        "山东省": "Shandong",
+        "河南省": "Henan",
+        "湖北省": "Hubei",
+        "湖南省": "Hunan",
+        "广东省": "Guangdong",
+        "海南省": "Hainan",
+        "四川省": "Sichuan",
+        "贵州省": "Guizhou",
+        "云南省": "Yunnan",
+        "陕西省": "Shaanxi",
+        "甘肃省": "Gansu",
+        "青海省": "Qinghai",
+        "台湾省": "Taiwan",
+        "内蒙古自治区": "Inner Mongolia",
+        "广西壮族自治区": "Guangxi",
+        "西藏自治区": "Tibet",
+        "宁夏回族自治区": "Ningxia",
+        "新疆维吾尔自治区": "Xinjiang",
+        "香港特别行政区": "Hong Kong",
+        "澳门特别行政区": "Macau"
+      };
+
+      const response = await fetch("/assets/maps/china.json");
+      if (!response.ok) {
+        throw new Error("Failed to load local china.json");
+      }
+      const chinaJson = await response.json();
+
+      echarts.registerMap("china", chinaJson);
+
+      const option = {
+        tooltip: {
+          trigger: "item",
+          formatter: function (params) {
+            if (params.value === 1) {
+              return englishNames[params.name] || params.name;
+            }
+            return "";
+          }
+        },
+        visualMap: {
+          min: 0,
+          max: 1,
+          show: false,
+          inRange: {
+            color: ["#F2F4F1", "#7F9B87"]
+          }
+        },
+        series: [
+          {
+            type: "map",
+            map: "china",
+            roam: false,
+            layoutCenter: ["50%", "52%"],
+            layoutSize: "98%",
+            label: {
+              show: false
+            },
+            itemStyle: {
+              borderColor: "#F7F8F5",
+              borderWidth: 0.8
+            },
+            emphasis: {
+              label: {
+                show: false
+              },
+              itemStyle: {
+                areaColor: "#6C8773"
+              }
+            },
+            data: data
+          }
+        ]
+      };
+
+      myChart.setOption(option);
+      window.addEventListener("resize", () => myChart.resize());
+    }
+
+    initChinaMap().catch(err => {
+      document.body.innerHTML =
+        "<pre style='padding:16px;color:#b00020;'>Map failed to load:\n" +
+        err +
+        "</pre>";
+      console.error(err);
+    });
+  </script>
+</body>
+</html>

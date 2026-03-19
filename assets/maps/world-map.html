@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Map</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    #world-map-chart {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="world-map-chart"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script>
+    async function initWorldMap() {
+      const chartDom = document.getElementById("world-map-chart");
+      const myChart = echarts.init(chartDom);
+
+      const visitedCountries = [
+        "China",
+        "United States",
+        "United Kingdom",
+        "Japan",
+        "Egypt",
+        "Guam",
+        "Canada",
+        "France",
+        "Italy",
+        "Spain",
+        "Portugal",
+        "Switzerland",
+        "Singapore",
+        "Croatia",
+        "Iceland",
+        "Norway",
+        "Hungary",
+        "Austria",
+        "Turkmenistan",
+        "South Korea",
+      ];
+
+      const data = visitedCountries.map(name => ({
+        name,
+        value: 1
+      }));
+
+      const response = await fetch("/assets/maps/world.json");
+      if (!response.ok) {
+        throw new Error("Failed to load local world.json");
+      }
+      const worldJson = await response.json();
+
+      echarts.registerMap("world", worldJson);
+
+      const option = {
+        tooltip: {
+            trigger: "item",
+            formatter: function (params) {
+                if (params.value === 1) {
+                return params.name;
+                }
+                return "";
+            }
+            },
+        visualMap: {
+          min: 0,
+          max: 1,
+          show: false,
+          inRange: {
+            color: ["#F2F4F1", "#7F9B87"]
+          }
+        },
+        series: [
+          {
+            type: "map",
+            map: "world",
+            roam: false,
+            itemStyle: {
+              borderColor: "#FFFFFF",
+              borderWidth: 0.8
+            },
+            emphasis: {
+              label: { show: false },
+              itemStyle: {
+                areaColor: "#6C8773"
+              }
+            },
+            data: data
+          }
+        ]
+
+        // series: [
+        //   {
+        //     type: "map",
+        //     map: "world",
+        //     roam: false,
+        //     projection: {
+        //       project: function (point) {
+        //         return [
+        //           (point[0] / 180) * Math.PI,
+        //           -Math.log(Math.tan((Math.PI / 2 + (point[1] / 180) * Math.PI) / 2))
+        //         ];
+        //       },
+        //       unproject: function (point) {
+        //         return [
+        //           (point[0] * 180) / Math.PI,
+        //           ((2 * 180) / Math.PI) * Math.atan(Math.exp(point[1])) - 90
+        //         ];
+        //       }
+        //     },
+        //     itemStyle: {
+        //       borderColor: "#F7F8F5",
+        //       borderWidth: 0.8
+        //     },
+        //     emphasis: {
+        //       label: { show: false },
+        //       itemStyle: {
+        //         areaColor: "#6C8773"
+        //       }
+        //     },
+        //     data: data
+        //   }
+        // ]
+
+      };
+
+      myChart.setOption(option);
+      window.addEventListener("resize", () => myChart.resize());
+    }
+
+    initWorldMap().catch(err => {
+      document.body.innerHTML =
+        "<pre style='padding:16px;color:#b00020;'>Map failed to load:\n" +
+        err +
+        "</pre>";
+      console.error(err);
+    });
+  </script>
+</body>
+</html>
