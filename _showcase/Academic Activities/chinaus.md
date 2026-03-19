@@ -1,7 +1,7 @@
 ---
 show: true
 width: 4
-date: 2027-07-01 00:01:00 +0800
+date: 2027-07-02 00:01:00 +0800
 group: Competitions
 ---
 <div>
