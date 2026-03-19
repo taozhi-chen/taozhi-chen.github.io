@@ -1,7 +1,7 @@
 ---
 show: true
 width: 6
-date: 2027-01-02 00:01:00 +0800
+date: 2026-12-31 00:01:00 +0800
 group: Travel Maps
 ---
 
@@ -13,7 +13,7 @@ group: Travel Maps
 <div class="px-0 pb-0">
   <iframe
     src="/assets/maps/world-map.html"
-    style="width: 100%; height: 290px; border: 0; border-radius: 1px;"
+    style="width: 100%; height: 280px; border: 0; border-radius: 1px;"
     loading="lazy">
   </iframe>
 </div>

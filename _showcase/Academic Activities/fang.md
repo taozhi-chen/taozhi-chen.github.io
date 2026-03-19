@@ -1,7 +1,7 @@
 ---
 show: true
 width: 4
-date: 2027-10-21 00:01:00 +0800
+date: 2027-10-20 00:01:00 +0800
 group: Academic Events
 ---
 <div>
