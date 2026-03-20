@@ -39,4 +39,67 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
+
+    function relayoutMasonry($container) {
+        if (!$container || !$container.length || typeof $container.masonry !== 'function') {
+            return;
+        }
+        if ($container.data('masonry')) {
+            $container.masonry('layout');
+        }
+    }
+
+    function bindDynamicMasonryRelayout(selector) {
+        if (typeof MutationObserver === 'undefined') {
+            return;
+        }
+
+        var raf = window.requestAnimationFrame || function (cb) {
+            return setTimeout(cb, 16);
+        };
+
+        $(selector).each(function () {
+            var $container = $(this);
+            var scheduled = false;
+
+            var scheduleLayout = function () {
+                if (scheduled) {
+                    return;
+                }
+                scheduled = true;
+                raf(function () {
+                    scheduled = false;
+                    relayoutMasonry($container);
+                });
+            };
+
+            // Masonry with data attributes may initialize a bit later than DOM ready.
+            var retries = 0;
+            var ensureReady = function () {
+                if ($container.data('masonry')) {
+                    relayoutMasonry($container);
+                    return;
+                }
+                if (retries < 10) {
+                    retries += 1;
+                    setTimeout(ensureReady, 200);
+                }
+            };
+            ensureReady();
+
+            var observer = new MutationObserver(function () {
+                scheduleLayout();
+            });
+            observer.observe(this, {
+                subtree: true,
+                childList: true,
+                characterData: true
+            });
+
+            $(window).on('resize', scheduleLayout);
+            window.addEventListener('load', scheduleLayout);
+        });
+    }
+
+    bindDynamicMasonryRelayout('.js-dynamic-masonry');
 })
