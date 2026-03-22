@@ -13,12 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+title: "Taozhi Chen"
+description: "Taozhi Chen's academic homepage: research, publications, projects, news, and awards."
+lang: "en"
+url: "https://taozhi-chen.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-email-protect
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
