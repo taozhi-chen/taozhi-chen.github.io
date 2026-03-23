@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Taozhi Chen"
-description: "Taozhi Chen's academic homepage: research, publications, projects, news, and awards."
+title: "Taozhi Chen (陈韬至)"
+description: "Taozhi Chen (陈韬至)'s academic homepage: research, publications, projects, news, and awards."
 lang: "en"
 url: "https://taozhi-chen.github.io"
 google_site_verification: "N38r2sOC-bgvhOoxvH1v02Dg8pA81YSdZFr6KtZ4kzk"
