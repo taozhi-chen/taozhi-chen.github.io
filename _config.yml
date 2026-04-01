@@ -17,6 +17,10 @@ title: "Taozhi Chen (陈韬至)"
 description: "Taozhi Chen (陈韬至)'s academic homepage: research, publications, projects, news, and awards."
 lang: "en"
 url: "https://taozhi-chen.github.io"
+site_name: "Taozhi Chen"
+alternate_name: "Taozhi Chen Homepage"
+favicon: "/assets/images/photos/logo.png"
+apple_touch_icon: "/assets/images/photos/logo.png"
 google_site_verification: "N38r2sOC-bgvhOoxvH1v02Dg8pA81YSdZFr6KtZ4kzk"
 baseurl: "" # the subpath of your site, e.g. /blog
 
