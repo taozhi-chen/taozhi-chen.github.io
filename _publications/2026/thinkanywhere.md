@@ -23,5 +23,5 @@ authors:
   - Yihong Dong
 links:
   Paper: https://arxiv.org/pdf/2603.29957
-  Code: https://github.com/jiangxxxue/ThinkAnywhere
+  Code: https://github.com/jiangxxxue/Think-Anywhere
 ---
