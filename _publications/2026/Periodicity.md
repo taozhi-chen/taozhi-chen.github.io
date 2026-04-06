@@ -1,7 +1,7 @@
 ---
 title:          "Do Transformers Have the Ability for Periodicity Generalization?"
 date:           2026-01-30
-selected:       true
+selected:       False
 pub:            "arXiv"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'

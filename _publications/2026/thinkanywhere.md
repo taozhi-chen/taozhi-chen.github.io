@@ -1,7 +1,7 @@
 ---
 title:          "Think Anywhere in Code Generation"
 date:           2026-03-31
-selected:       False
+selected:       True
 pub:            "arXiv"
 # pub_pre:        "Submitted to ACL 2026"
 # pub_post:       'Under review.'
