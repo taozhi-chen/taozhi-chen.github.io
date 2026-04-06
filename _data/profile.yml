@@ -22,10 +22,15 @@ orcid: 0000-0002-0061-7890
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am currently a Research Assistant at the College of AI, Tsinghua University. Before this, I held research positions at Peking University and Microsoft. I received my MSc in Data Science and Machine Learning from Imperial College London.
+    I am a PhD student in Computer Science at Emory University, where I am advised by <a href="https://www.joonseok.org/" target="_blank">Prof. Joon-Seok Kim</a> in the <a href="https://cs.emory.edu/~ais/" target="_blank">AI and Simulation Lab</a>. Before joining Emory, I worked as a Research Assistant at the College of AI, Tsinghua University, and also conducted research at Peking University under <a href="https://ligechina.github.io/" target="_blank">Prof. Ge Li</a> and at Microsoft under <a href="https://github.com/leestott" target="_blank">Prof. Lee Stott</a>. I graduated from Imperial College London and Tsinghua University.
   </p>
+
   <p>
-    My research interests lie in large language models, multi-agent systems, reasoning, reinforcement learning, and reliable AI. I am particularly interested in building intelligent systems that can reason, interact, and operate robustly in complex real-world environments.
+    My research interests include AI agents, large language models, multi-agent systems, and data science. I am particularly interested in building intelligent systems that can reason, interact with tools and environments, and operate robustly in complex real-world settings. More broadly, I aim to bridge research and engineering to make AI systems not only more capable, but also more dependable and practically useful.
+  </p>
+
+  <p>
+    I welcome conversations and collaborations with researchers and engineers interested in AI agents, applied machine learning, and intelligent systems.
   </p>
 
 portrait_url: /assets/images/photos/portrait_tz_small.jpg
