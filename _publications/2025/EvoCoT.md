@@ -2,7 +2,7 @@
 title:          "EvoCoT: Overcoming the Exploration Bottleneck in Reinforcement Learning"
 date:           2025-08-11
 selected:       False
-pub:            "arXiv"
+pub:            "ACL 2026 Findings"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
