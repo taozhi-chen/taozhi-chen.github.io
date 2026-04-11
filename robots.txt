@@ -2,7 +2,11 @@
 layout: null
 permalink: /robots.txt
 ---
+User-agent: Googlebot-Image
+Disallow: /assets/images/etc/wechat.jpg
+
 User-agent: *
 Allow: /
+Disallow: /assets/images/etc/wechat.jpg
 
 Sitemap: {{ "/sitemap.xml" | absolute_url }}
