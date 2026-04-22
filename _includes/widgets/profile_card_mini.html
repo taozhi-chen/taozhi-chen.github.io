@@ -10,12 +10,13 @@
                             <img 
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
                                 class="figure-img img-fluid" 
+                                alt="{{ site.data.profile.portrait_alt | default: 'Portrait' }}"
                                 data-toggle="tooltip" 
                                 data-placement="top" 
                                 title="{{ site.data.profile.portrait_caption }}">
                         </div>
                         <div class="mb-3 d-md-none text-center">
-                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="Portrait">
+                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="{{ site.data.profile.portrait_alt | default: 'Portrait' }}">
                         </div>
                         {% endif %}
                     </div>

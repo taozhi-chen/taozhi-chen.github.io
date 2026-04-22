@@ -33,9 +33,10 @@ short_bio: >-
     I welcome conversations and collaborations with researchers and engineers interested in AI agents, applied machine learning, and intelligent systems.
   </p>
 
-portrait_url: /assets/images/photos/portrait_tz_small.jpg
+portrait_url: /assets/images/photos/taozhi-chen-portrait.jpg
+portrait_alt: "Portrait of Taozhi Chen (陈韬至)"
 # portrait_caption: >-
-#   Photo by Taozhi Chen on Unsplash (this caption is optional, comment it out to disable).
+#   Portrait of Taozhi Chen (陈韬至).
 
 education:
 - name: Emory University
