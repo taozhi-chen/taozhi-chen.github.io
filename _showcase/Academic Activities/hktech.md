@@ -1,8 +1,9 @@
 ---
 show: true
 width: 4
-date: 2027-10-24 00:01:00 +0800
-group: Academic Events
+# date: 2027-10-24 00:01:00 +0800
+date: 2027-03-07 00:01:00 +0800
+group: Other Events
 ---
 <div>
   <img data-src="{{ '/assets/images/show/academic/hktech.jpg' | relative_url }}" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" data-toggle="tooltip" data-placement="top" title="HKUST, Hong Kong, China, 20 Sep 2023">
