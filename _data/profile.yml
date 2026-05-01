@@ -17,6 +17,7 @@ wechat_qrcode: /assets/images/etc/wechat.jpg
 wechat_prompt: >-
   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 linkedin: taozhi-chen
+researchgate: Taozhi-Chen
 orcid: 0000-0002-0061-7890
 
 short_bio_text_justify: false
@@ -38,6 +39,16 @@ portrait_alt: "Portrait of Taozhi Chen (陈韬至)"
 # portrait_caption: >-
 #   Portrait of Taozhi Chen (陈韬至).
 
+alumni_of:
+- Imperial College London
+- Tsinghua University
+
+credentials:
+- category: "Bachelor's degree"
+  description: "B.S. from Tsinghua University"
+- category: "Master's degree"
+  description: "MSc in Data Science and Machine Learning from Imperial College London"
+
 education:
 - name: Emory University
   logo: /assets/images/badges/emory_logo2.jpg
@@ -54,10 +65,10 @@ education:
     Lab Director: <a href="https://profiles.imperial.ac.uk/r.arcucci" target="_blank">Prof. Rossella Arcucci</a> <br/>
     Ada Lovelace Academy <br/>
   date: Sep. 2024 - Sep. 2025
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
+# - name: Tsinghua University
+#   logo: /assets/images/badges/Tsinghua_University_Logo.svg.png
 #   position: B.S. in Computer Science
-#   date: Sep. 2019 - Jul. 2021
+#   date: Sep. 2020 - Jul. 2024
 
 experience:
 - name: ESET
