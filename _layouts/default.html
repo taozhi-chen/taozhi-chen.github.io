@@ -24,9 +24,9 @@
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "url": "{{ '/' | absolute_url }}",
-          "name": "{{ site.site_name | default: site.data.profile.navbar_name | escape }}"{% if site.alternate_name %},
-          "alternateName": "{{ site.alternate_name | escape }}"{% endif %}
+          "url": {{ '/' | absolute_url | jsonify }},
+          "name": {{ site.site_name | default: site.data.profile.navbar_name | jsonify }}{% if site.alternate_name %},
+          "alternateName": {{ site.alternate_name | jsonify }}{% endif %}
         }
     </script>
     {% if page.navbar_title == 'Home' %}
@@ -39,15 +39,15 @@
         {
           "@context": "https://schema.org",
           "@type": "Person",
-          "name": "{{ site.data.profile.primary_name | escape }}",
-          "url": "{{ '/' | absolute_url }}",
-          "image": "{{ site.data.profile.portrait_url | absolute_url }}",
-          "description": "{{ site.description | strip_html | strip_newlines | escape }}",
+          "name": {{ site.data.profile.primary_name | jsonify }},
+          "url": {{ '/' | absolute_url | jsonify }},
+          "image": {{ site.data.profile.portrait_url | absolute_url | jsonify }},
+          "description": {{ site.description | strip_html | strip_newlines | jsonify }},
           "alumniOf": [
             {% for school in site.data.profile.alumni_of %}
             {
               "@type": "CollegeOrUniversity",
-              "name": "{{ school | escape }}"
+              "name": {{ school | jsonify }}
             }{% unless forloop.last %},{% endunless %}
             {% endfor %}
           ],
@@ -55,31 +55,31 @@
             {% for credential in site.data.profile.credentials %}
             {
               "@type": "EducationalOccupationalCredential",
-              "credentialCategory": "{{ credential.category | escape }}",
-              "description": "{{ credential.description | escape }}"
+              "credentialCategory": {{ credential.category | jsonify }},
+              "description": {{ credential.description | jsonify }}
             }{% unless forloop.last %},{% endunless %}
             {% endfor %}
           ],
           "sameAs": [
             {% assign same_as_started = false %}
             {% if site.data.profile.linkedin %}
-            "https://www.linkedin.com/in/{{ site.data.profile.linkedin }}"{% assign same_as_started = true %}
+            {{ 'https://www.linkedin.com/in/' | append: site.data.profile.linkedin | jsonify }}{% assign same_as_started = true %}
             {% endif %}
             {% if site.data.profile.github %}
             {% if same_as_started %},{% endif %}
-            "https://github.com/{{ site.data.profile.github }}"{% assign same_as_started = true %}
+            {{ 'https://github.com/' | append: site.data.profile.github | jsonify }}{% assign same_as_started = true %}
             {% endif %}
             {% if site.data.profile.orcid %}
             {% if same_as_started %},{% endif %}
-            "https://orcid.org/{{ site.data.profile.orcid }}"{% assign same_as_started = true %}
+            {{ 'https://orcid.org/' | append: site.data.profile.orcid | jsonify }}{% assign same_as_started = true %}
             {% endif %}
             {% if site.data.profile.researchgate %}
             {% if same_as_started %},{% endif %}
-            "https://www.researchgate.net/profile/{{ site.data.profile.researchgate }}"{% assign same_as_started = true %}
+            {{ 'https://www.researchgate.net/profile/' | append: site.data.profile.researchgate | jsonify }}{% assign same_as_started = true %}
             {% endif %}
             {% if site.data.profile.gscholar %}
             {% if same_as_started %},{% endif %}
-            "{{ gscholar_schema_url }}"{% assign same_as_started = true %}
+            {{ gscholar_schema_url | jsonify }}{% assign same_as_started = true %}
             {% endif %}
           ]
         }
