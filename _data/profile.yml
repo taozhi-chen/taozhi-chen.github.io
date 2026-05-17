@@ -71,12 +71,6 @@ education:
 #   date: Sep. 2020 - Jul. 2024
 
 experience:
-- name: ESET
-  logo: /assets/images/badges/ESET_logo1.png
-  position: >- 
-    China Technical Service Center <br/>
-    Technical Support Manager <br/>
-  date: Apr. 2026 - Present
 - name: Tsinghua University
   logo: /assets/images/badges/Tsinghua_University_Logo.svg.png
   position: >- 
@@ -118,9 +112,9 @@ awards:
 - name: Laney Graduate School Fellowship, <br/>
         Emory University
   date: 2026
-- name: Outstanding Research Award, <br/>
-        Imperial College London
-  date: 2025
+# - name: Outstanding Research Award, <br/>
+#         Imperial College London
+#   date: 2025
 - name: China-U.S. Young Maker Competition, <br/>
         National First Prize (Main Track)
   date: 2024
@@ -130,6 +124,6 @@ awards:
 - name: Shenzhen Cybersecurity Competition, <br/>
         First Prize, Advised by <a href="https://baike.baidu.com/en/item/Bin%20xing%20Fang/17880" target="_blank">Prof. Bin Xing Fang</a>
   date: 2022
-- name: Scholarship, <br/>
-        Fok Ying Tung Foundation
-  date: 2021, 2022
+# - name: Scholarship, <br/>
+#         Fok Ying Tung Foundation
+#   date: 2021, 2022
