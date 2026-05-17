@@ -1,0 +1,56 @@
+{% assign link_name = publication_link_name %}
+{% assign link_value = publication_link_value %}
+
+{% if link_value.url %}
+    {% assign link_url = link_value.url %}
+    {% assign link_target = link_value.target | default: "_blank" %}
+    {% assign custom_badge = link_value.badge %}
+    {% assign custom_alt = link_value.alt %}
+{% else %}
+    {% assign link_url = link_value %}
+    {% assign link_target = "_blank" %}
+    {% assign custom_badge = nil %}
+    {% assign custom_alt = nil %}
+{% endif %}
+
+{% assign normalized_name = link_name | downcase %}
+{% assign link_url_downcase = link_url | downcase %}
+{% assign badge_url = custom_badge %}
+{% assign badge_alt = custom_alt | default: link_name %}
+
+{% if badge_url == nil %}
+    {% if normalized_name == 'paper' %}
+        {% if link_url_downcase contains 'arxiv.org/abs/' or link_url_downcase contains 'arxiv.org/pdf/' %}
+            {% capture arxiv_id %}{{ link_url
+                | replace: 'https://arxiv.org/abs/', ''
+                | replace: 'http://arxiv.org/abs/', ''
+                | replace: 'https://arxiv.org/pdf/', ''
+                | replace: 'http://arxiv.org/pdf/', ''
+                | replace: '.pdf', '' }}{% endcapture %}
+            {% assign arxiv_id = arxiv_id | strip %}
+            {% assign badge_url = 'https://img.shields.io/badge/arXiv-' | append: arxiv_id | append: '-b31b1b.svg' %}
+            {% assign badge_alt = 'arXiv' %}
+        {% else %}
+            {% assign badge_url = 'https://img.shields.io/badge/Paper-View-2ea44f.svg' %}
+        {% endif %}
+    {% elsif normalized_name == 'code' %}
+        {% if link_url_downcase contains 'github.com/' %}
+            {% assign badge_url = 'https://img.shields.io/badge/Code-GitHub-181717.svg?logo=github' %}
+            {% assign badge_alt = 'GitHub code' %}
+        {% else %}
+            {% assign badge_url = 'https://img.shields.io/badge/Code-Available-181717.svg' %}
+        {% endif %}
+    {% elsif normalized_name == 'hugging face' %}
+        {% assign badge_url = 'https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-FF9D00.svg' %}
+    {% elsif normalized_name == 'alphaxiv' %}
+        {% assign badge_url = 'https://img.shields.io/badge/alphaXiv-darkred.svg' %}
+    {% endif %}
+{% endif %}
+
+<a class="publication-link-badge" target="{{ link_target }}" rel="noopener noreferrer" href="{{ link_url }}">
+    {% if badge_url %}
+    <img src="{{ badge_url }}" alt="{{ badge_alt }} badge" referrerpolicy="no-referrer">
+    {% else %}
+    <span class="publication-link-text">[{{ link_name }}]</span>
+    {% endif %}
+</a>

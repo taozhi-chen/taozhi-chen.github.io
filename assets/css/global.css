@@ -86,6 +86,30 @@ div.lazy {
     font-size: 100%;
 }
 
+.abstract-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.45rem;
+    margin-top: 0.3rem;
+}
+
+.publication-link-badge {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.publication-link-badge img {
+    display: block;
+    height: 18px;
+    width: auto;
+}
+
+.publication-link-text {
+    font-size: 0.875rem;
+}
+
 .email-text {
     font-family: Source Code Pro, monospace;
 }
