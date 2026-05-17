@@ -99,13 +99,13 @@ experience:
     Advisor: <a href="https://web.ee.tsinghua.edu.cn/xiaoxi/en/index.htm" target="_blank">Prof. Xi Xiao</a> <br/>
     Research Assistant <br/>
   date: Jun. 2023 - Jun. 2024
-- name: Schneider Electric
-  logo: /assets/images/badges/schneider_logo.svg
-  position:  >- 
-    People Analytics Department <br/>
-    Data Analyst <br/>
-    Full-time Intern <br/>
-  date: Jun. 2022 - Aug. 2022
+# - name: Schneider Electric
+#   logo: /assets/images/badges/schneider_logo.svg
+#   position:  >- 
+#     People Analytics Department <br/>
+#     Data Analyst <br/>
+#     Full-time Intern <br/>
+#   date: Jun. 2022 - Aug. 2022
 
 
 awards:
@@ -118,12 +118,12 @@ awards:
 - name: China-U.S. Young Maker Competition, <br/>
         National First Prize (Main Track)
   date: 2024
-- name: Special Scholarship for Excellent Students, <br/> 
-        Macau Foundation (Sole Recipient)
-  date: 2023
-- name: Shenzhen Cybersecurity Competition, <br/>
-        First Prize, Advised by <a href="https://baike.baidu.com/en/item/Bin%20xing%20Fang/17880" target="_blank">Prof. Bin Xing Fang</a>
-  date: 2022
+# - name: Special Scholarship for Excellent Students, <br/> 
+#         Macau Foundation (Sole Recipient)
+#   date: 2023
+# - name: Shenzhen Cybersecurity Competition, <br/>
+#         First Prize, Advised by <a href="https://baike.baidu.com/en/item/Bin%20xing%20Fang/17880" target="_blank">Prof. Bin Xing Fang</a>
+#   date: 2022
 # - name: Scholarship, <br/>
 #         Fok Ying Tung Foundation
 #   date: 2021, 2022
