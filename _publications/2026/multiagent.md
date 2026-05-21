@@ -18,6 +18,7 @@ authors:
   - Xue Jiang
   - Yihong Dong
 links:
-  # Paper: https://arxiv.org/abs/
-  # Code: https://github.com/
+  Paper: https://arxiv.org/pdf/2605.20563
+  Code: https://github.com/dreamyang-liu/STORM
+  alphaXiv: https://www.alphaxiv.org/abs/2605.20563
 ---
