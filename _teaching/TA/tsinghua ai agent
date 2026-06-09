@@ -1,0 +1,12 @@
+---
+title: "Foundations of AI Practice (AI Agents)"
+category: "Teaching Assistant"
+# role: "Teaching Assistant"
+organization: <a href="https://wqc.tsinghua.edu.cn/" target="_blank">Wuqiong College</a>, Tsinghua University
+instructor: <a href="https://lj2lijia.github.io/" target="_blank">Prof. Jia Li</a>, <a href="https://yaoyuanthu.github.io" target="_blank">Prof. Yuan Yao</a>, <a href="https://maureenzou.github.io" target="_blank">Prof. Xueyan Zou</a>
+display_date: "Jul 2026"
+date: 2026-06-29
+description: "Foundations of AI Practice is an advanced practice-oriented course designed for undergraduate students in artificial intelligence and related disciplines. The course focuses on LLM-powered AI agent technologies, covering core topics such as the fundamental principles of AI agents, prompt engineering, memory mechanisms, planning capabilities, tool use, and multi-agent collaboration."
+# links:
+#   Syllabus: https://example.com
+---
