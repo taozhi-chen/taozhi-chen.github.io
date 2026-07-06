@@ -2,9 +2,9 @@
 title:          "Multi-agent Collaboration with State Management"
 date:           2026-05-08
 selected:       True
-# pub:            "arXiv"
+pub:            "arXiv"
 # pub_pre:        "Submitted to NeurIPS 2026"
-pub_post:       'Under review.'
+# pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "May 2026"
 semantic_scholar_id: b9413f25efb07e4e3575c649bbc33bb4c2a08fcf  # use this to retrieve citation count
