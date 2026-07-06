@@ -11,5 +11,7 @@ pages:
   url: /teaching
 - name: Awards
   url: /awards
+- name: Services
+  url: /services
 - name: Showcase
   url: /showcase

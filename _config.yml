@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Taozhi Chen (陈韬至)"
-description: "Taozhi Chen (陈韬至)'s academic homepage: research, publications, projects, news, and awards."
+description: "Taozhi Chen (陈韬至)'s academic homepage: research, publications, projects, teaching, services, news, and awards."
 lang: "en"
 url: "https://taozhi-chen.github.io"
 site_name: "Taozhi Chen"
@@ -51,3 +51,4 @@ collections:
   - projects
   - awards
   - teaching
+  - services
