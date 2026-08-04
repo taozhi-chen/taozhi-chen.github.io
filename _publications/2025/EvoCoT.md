@@ -23,5 +23,6 @@ authors:
   - Ge Li
 links:
   Paper: https://arxiv.org/pdf/2508.07809
+  paper: https://aclanthology.org/2026.findings-acl.1031.pdf
   Code: https://github.com/gtxygyzb/EvoCoT
 ---
