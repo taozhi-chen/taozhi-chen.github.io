@@ -1,4 +1,8 @@
 @charset "utf-8";
+html {
+    overflow-y: scroll;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -113,4 +117,3 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
-
