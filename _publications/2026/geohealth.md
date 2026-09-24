@@ -2,9 +2,9 @@
 title:          "Fleet Capacity and Operational Coverage in Autonomous Transportation for Rural Healthcare Acces"
 date:           2026-08-21
 selected:       False
-# pub:            "arXiv"
+pub:            "The 2nd ACM SIGSPATIAL International Workshop on Geospatial Computing for Public Health (GeoHealth’26)"
 # pub_pre:        "Submitted to ACL 2026"
-pub_post:       'Under review.'
+# pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "Aug 2026"
 semantic_scholar_id:   # use this to retrieve citation count

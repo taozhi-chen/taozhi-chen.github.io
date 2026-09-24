@@ -2,9 +2,9 @@
 title:          "Scalable Origin-Destination Travel Time Estimation via Landmark Approximation and Neural Residual Correction"
 date:           2026-08-21
 selected:       False
-# pub:            "arXiv"
+pub:            "The 4th ACM SIGSPATIAL International Workshop on Advances in Urban AI (UrbanAI’26)"
 # pub_pre:        "Submitted to ACL 2026"
-pub_post:       'Under review.'
+# pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "Aug 2026"
 semantic_scholar_id:   # use this to retrieve citation count

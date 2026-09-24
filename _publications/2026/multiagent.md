@@ -2,7 +2,7 @@
 title:          "Multi-agent Collaboration with State Management"
 date:           2026-05-08
 selected:       True
-pub:            "arXiv"
+pub:            "The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026)"
 # pub_pre:        "Submitted to NeurIPS 2026"
 # pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
