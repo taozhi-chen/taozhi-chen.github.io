@@ -8,7 +8,7 @@ group: Travel - North America
   <img data-src="{{ '/assets/images/show/us/nyc.jpg' | relative_url }}" class="lazy w-100 rounded-xl-top" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
   <div class="card-body">
     <p class="card-text">
-      🇺🇸 USA - New york City
+      🇺🇸 USA - New York City
     </p>
   </div>
 </div>
