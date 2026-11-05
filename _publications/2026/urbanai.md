@@ -5,7 +5,7 @@ selected:       False
 pub:            "The 4th ACM SIGSPATIAL International Workshop on Advances in Urban AI (UrbanAI’26)"
 # pub_pre:        "Submitted to ACL 2026"
 # pub_post:       'Under review.'
-# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Oral</span>'
 pub_date:       "Aug 2026"
 semantic_scholar_id:   # use this to retrieve citation count
 abstract: >-
