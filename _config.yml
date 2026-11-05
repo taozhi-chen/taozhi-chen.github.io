@@ -30,6 +30,13 @@ plugins:
   - jekyll-email-protect
   - jekyll-sitemap
 
+# Showcase's embedded maps should not be advertised in the sitemap.
+defaults:
+  - scope:
+      path: "assets/maps"
+    values:
+      sitemap: false
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

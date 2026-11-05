@@ -2,11 +2,14 @@
 layout: null
 permalink: /robots.txt
 ---
+# Keep HTML pages crawlable so search engines can read their noindex tags.
 User-agent: Googlebot-Image
 Disallow: /assets/images/etc/wechat.jpg
+Disallow: /assets/images/show/
 
 User-agent: *
 Allow: /
 Disallow: /assets/images/etc/wechat.jpg
+Disallow: /assets/images/show/
 
 Sitemap: {{ "/sitemap.xml" | absolute_url }}
